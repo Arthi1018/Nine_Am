@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Firefox test(failed)" parallel="tests">
+    <parameter name="browser" value="firefoxbrowser"/>
+    <classes>
+      <class name="org.test.Parallel">
+        <methods>
+          <include name="flipkart" invocation-numbers="0"/>
+          <include name="amazon" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.test.Parallel -->
+    </classes>
+  </test> <!-- Firefox test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
